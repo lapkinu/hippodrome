@@ -59,4 +59,34 @@ class HorseTest {
         assertEquals("Distance cannot be negative.", exception.getMessage());
     }
 
+
+
+
+    // test getName method
+    @Test
+    void testGetName() {
+        Horse horse = new Horse("Bucephalus", 10);
+        assertEquals("Bucephalus", horse.getName());
+    }
+
+    // test getSpeed method
+    @Test
+    void testGetSpeed() {
+        Horse horse = new Horse("Bucephalus", 10);
+        assertEquals(10, horse.getSpeed());
+    }
+
+    // test getDistance method
+    @Test
+    void testGetDistanceTwoParameters() {
+        Horse horse = new Horse("Bucephalus", 10);
+        assertEquals(0, horse.getDistance());
+    }
+
+    @Test
+    void  testGetDistanceThreeParameters() {
+        Horse horse = new Horse("Bucephalus", 10, 0);
+        assertEquals(0, horse.getDistance());
+    }
+
 }
