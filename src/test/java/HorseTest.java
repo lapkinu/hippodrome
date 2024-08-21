@@ -1,8 +1,12 @@
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.mockito.MockedStatic;
+import org.powermock.core.classloader.annotations.PrepareForTest;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
+
 class HorseTest {
 
     // Test the constructor name parameter null value exception case
@@ -60,8 +64,6 @@ class HorseTest {
     }
 
 
-
-
     // test getName method
     @Test
     void testGetName() {
@@ -84,9 +86,10 @@ class HorseTest {
     }
 
     @Test
-    void  testGetDistanceThreeParameters() {
+    void testGetDistanceThreeParameters() {
         Horse horse = new Horse("Bucephalus", 10, 0);
         assertEquals(0, horse.getDistance());
     }
+
 
 }
