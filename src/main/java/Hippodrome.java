@@ -11,7 +11,6 @@ import static java.util.Objects.isNull;
 public class Hippodrome {
 
     private static final Logger log = LoggerFactory.getLogger(Hippodrome.class);
-
     private final List<Horse> horses;
 
     public Hippodrome(List<Horse> horses) {
@@ -22,7 +21,6 @@ public class Hippodrome {
             log.error("Horses list is empty");
             throw new IllegalArgumentException("Horses cannot be empty.");
         }
-
         this.horses = horses;
         log.info("Создание Hippodrome, лошадей [{}]", horses.size());
     }
@@ -40,4 +38,5 @@ public class Hippodrome {
                 .max(Comparator.comparing(Horse::getDistance))
                 .get();
     }
+
 }

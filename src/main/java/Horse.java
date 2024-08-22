@@ -7,8 +7,6 @@ import static java.util.Objects.isNull;
 public class Horse {
 
     private static final Logger log = LoggerFactory.getLogger(Horse.class);
-
-
     private final String name;
     private final double speed;
     private double distance;
@@ -59,4 +57,5 @@ public class Horse {
     public static double getRandomDouble(double min, double max) {
         return (Math.random() * (max - min)) + min;
     }
+
 }

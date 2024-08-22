@@ -49,7 +49,6 @@ class HippodromeTest {
     // method getHorses
     @Test
     void testGetHorses() {
-        // List<Horse> horses = new ArrayList<>();
         for (int i = 0; i < 30; i++) {
             horses.add(new Horse("Horse" + i, 10));
         }
@@ -60,7 +59,6 @@ class HippodromeTest {
     // method move
     @Test
     void HippodromeTestMove() {
-        // List<Horse> horses = new ArrayList<>();
         for (int i = 0; i < 50; i++) {
             horses.add(mock(Horse.class));
         }

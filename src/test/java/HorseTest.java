@@ -61,7 +61,6 @@ class HorseTest {
         assertEquals("Distance cannot be negative.", exception.getMessage());
     }
 
-
     // test getName method
     @Test
     void testGetName() {
