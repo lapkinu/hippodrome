@@ -16,7 +16,4 @@ class MainTest {
         assertTimeoutPreemptively(Duration.ofSeconds(22), () -> Main.main(new String[]{}));
     }
 
-
-
-
 }
