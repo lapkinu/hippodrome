@@ -22,7 +22,7 @@ class HorseTest {
         assertEquals("Name cannot be null.", exception.getMessage());
     }
 
-    //IllegalArgumentException("Name cannot be blank.") exception case test parameterized test
+    // IllegalArgumentException("Name cannot be blank.") exception case test parameterized test
     @ParameterizedTest
     @ValueSource(strings = {"", " ", "  ", "   "})
     void testConstructorNameBlank(String name) {
@@ -85,6 +85,7 @@ class HorseTest {
         assertEquals(0, horse.getDistance());
     }
 
+    // test getDistance method
     @Test
     void testGetDistanceThreeParameters() {
         Horse horse = new Horse("Bucephalus", 10, 0);

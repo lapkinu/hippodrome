@@ -35,9 +35,7 @@ class HippodromeTest {
         assertEquals("Horses cannot be empty.", exception.getMessage());
     }
 
-    // метод getHorses
-    //Проверить, что метод возвращает список, который содержит те же объекты и в той же последовательности, что и список который был передан в конструктор. При создании объекта Hippodrome передай в конструктор список из 30 разных лошадей;
-    @Test
+    // method getHorses
     void testGetHorses() {
         List<Horse> horses = new ArrayList<>();
         for (int i = 0; i < 30; i++) {
@@ -47,8 +45,7 @@ class HippodromeTest {
         assertEquals(horses, hippodrome.getHorses());
     }
 
-    // метод move
-    //Проверить, что метод вызывает метод move у всех лошадей. При создании объекта Hippodrome передай в конструктор список из 50 моков лошадей и воспользуйся методом verify.
+    // method move
     @Test
     void testMove() {
         List<Horse> horses = new ArrayList<>();
@@ -62,8 +59,7 @@ class HippodromeTest {
         }
     }
 
-    //метод getWinner
-    //Проверить, что метод возвращает лошадь с самым большим значением distance.
+    // method getWinner
     @Test
     void testGetWinner() {
         Horse horse1 = new Horse("Horse1", 10, 100);
